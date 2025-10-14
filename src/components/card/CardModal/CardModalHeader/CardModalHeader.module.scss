@@ -1,0 +1,60 @@
+@import "@/styles/variables";
+
+.modalHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 24px 24px 0 24px;
+  margin-bottom: 16px;
+  position: relative;
+  min-height: 60px;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: $text-color;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  flex: 1;
+  margin-right: 12px;
+  line-height: 1.4;
+
+  &:hover {
+    background: rgba(9, 30, 66, 0.08);
+  }
+}
+
+.titleInput {
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+  resize: none;
+  font-family: inherit;
+  margin-right: 12px;
+  line-height: 1.4;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 8px;
+  cursor: pointer;
+  color: #6b778c;
+  flex-shrink: 0;
+
+  &:hover {
+    background: rgba(9, 30, 66, 0.08);
+    color: $text-color;
+  }
+}

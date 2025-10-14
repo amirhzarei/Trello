@@ -1,0 +1,28 @@
+@import "@/styles/variables";
+
+.confirmContent {
+  padding: 16px;
+}
+
+.confirmText {
+  margin: 0 0 16px 0;
+  color: #6b778c;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.deleteButton {
+  background: #cf513d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+
+  &:hover {
+    background: darken(#cf513d, 10%);
+  }
+}

@@ -1,0 +1,36 @@
+.boardHeader {
+  margin-bottom: 20px;
+  padding: 0 16px;
+}
+
+.boardTitle {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: inline-block;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.boardTitleInput {
+  background: rgba(255, 255, 255, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #172b4d;
+  min-width: 200px;
+
+  &:focus {
+    outline: none;
+    border-color: white;
+    background: white;
+  }
+}

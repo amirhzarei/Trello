@@ -1,0 +1,12 @@
+@import "@/styles/variables";
+
+.actionsMenu {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  z-index: 999;
+  width: 304px;
+  min-height: 100px;
+  max-height: 80vh;
+  overflow-y: auto;
+}

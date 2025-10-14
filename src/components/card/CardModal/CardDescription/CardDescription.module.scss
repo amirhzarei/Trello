@@ -1,0 +1,83 @@
+@import "@/styles/variables";
+
+.section {
+  margin-bottom: 32px;
+}
+
+.descriptionDisplay {
+  background: rgba(9, 30, 66, 0.04);
+  border-radius: 4px;
+  padding: 12px;
+  cursor: pointer;
+  min-height: 60px;
+
+  &:hover {
+    background: rgba(9, 30, 66, 0.08);
+  }
+
+  p {
+    margin: 0;
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+}
+
+.placeholder {
+  color: #6b778c;
+  font-style: italic;
+}
+
+.descriptionEditor {
+  background: rgba(9, 30, 66, 0.04);
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.descriptionInput {
+  width: 100%;
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+  padding: 8px 12px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 14px;
+  background: white;
+  margin-bottom: 12px;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.descriptionActions {
+  display: flex;
+  gap: 8px;
+}
+
+.saveButton {
+  background: $secondary-color;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+
+  &:hover {
+    background: darken($secondary-color, 10%);
+  }
+}
+
+.cancelButton {
+  background: transparent;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: $text-color;
+
+  &:hover {
+    background: rgba(9, 30, 66, 0.08);
+  }
+}

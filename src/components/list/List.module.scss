@@ -1,0 +1,51 @@
+@import "@/styles/variables";
+@import "@/styles/mixins";
+
+.list {
+  background: $list-bg;
+  border-radius: 8px;
+  padding: 12px;
+  width: 272px;
+  min-height: 100px;
+  margin-right: 12px;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 100px);
+
+  @include mobile {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+}
+
+.cards {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 8px;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+  }
+}
+
+.addCardButton {
+  background: transparent;
+  border: none;
+  color: #5e6c84;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  font-size: 14px;
+
+  &:hover {
+    background: rgba(9, 30, 66, 0.08);
+    color: $text-color;
+  }
+}

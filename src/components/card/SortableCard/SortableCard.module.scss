@@ -1,0 +1,12 @@
+.sortableCard {
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
+}
+
+.dragging {
+  opacity: 0.5;
+  transform: rotate(5deg);
+}

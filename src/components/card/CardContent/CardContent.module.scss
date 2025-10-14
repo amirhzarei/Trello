@@ -1,0 +1,31 @@
+@import "@/styles/variables";
+@import "@/styles/mixins";
+
+.cardContent {
+  position: relative;
+  word-wrap: break-word;
+  line-height: 1.4;
+  min-height: 20px;
+}
+
+.cardInput {
+  width: 100%;
+  border: 2px solid $primary-color;
+  border-radius: 4px;
+  padding: 8px;
+  resize: none;
+  font-family: inherit;
+  font-size: 14px;
+  background: white;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.descriptionIndicator {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 12px;
+}

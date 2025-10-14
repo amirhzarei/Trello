@@ -1,0 +1,31 @@
+@import "@/styles/variables";
+
+.deleteCardButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #cf513d;
+
+  &:hover {
+    background: rgba(207, 81, 61, 0.1);
+  }
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+
+  h3 {
+    margin-top: 10;
+    font-size: 16px;
+    font-weight: 600;
+    color: $text-color;
+  }
+}

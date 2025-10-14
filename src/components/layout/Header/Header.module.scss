@@ -1,0 +1,24 @@
+.header {
+  padding: 12px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.headerContent {
+  width: 100%;
+  max-width: 100%;
+}
+
+.homeHeader,
+.boardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 100%;
+}

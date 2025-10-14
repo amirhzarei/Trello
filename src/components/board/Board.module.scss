@@ -1,0 +1,32 @@
+.boardContent {
+  padding: 20px;
+  overflow-x: auto;
+  min-height: calc(100vh - 60px);
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}
+
+.listsContainer {
+  overflow-x: auto;
+  padding-bottom: 20px;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.lists {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  min-height: 400px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
