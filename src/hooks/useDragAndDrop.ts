@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import {
-  DndContext,
   KeyboardSensor,
   PointerSensor,
   useSensor,

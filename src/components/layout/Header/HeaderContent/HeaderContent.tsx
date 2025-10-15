@@ -1,19 +1,13 @@
 'use client';
 
 import { usePathname, useRouter } from 'next/navigation';
-import { Board } from '@/types';
 import { ArrowLeft } from 'lucide-react';
 import styles from './HeaderContent.module.scss';
 
-interface HeaderContentProps {
-    board?: Board;
-}
-
-export const HeaderContent: React.FC<HeaderContentProps> = ({ board }) => {
+export const HeaderContent = () => {
     const pathname = usePathname();
     const router = useRouter();
 
-    const isBoardPage = pathname.startsWith('/board/');
     const isHomePage = pathname === '/';
 
     if (isHomePage) {

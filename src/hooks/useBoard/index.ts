@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { Board } from "@/types";
+import { Board, Card, List } from "@/types";
 import {
   createList,
   updateListTitle,
@@ -57,15 +57,15 @@ export const useBoard = ({ initialBoard }: UseBoardProps) => {
     deleteList: (listId: string) => updateBoard(deleteList(listId)),
     deleteAllCardsInList: (listId: string) =>
       updateBoard(deleteAllCardsInList(listId)),
-    reorderLists: (lists: any) => updateBoard(reorderLists(lists)),
-    createCard: (listId: any, title: any) =>
+    reorderLists: (lists: List[]) => updateBoard(reorderLists(lists)),
+    createCard: (listId: string, title: string) =>
       updateBoard(createCard(listId, title)),
-    updateCard: (cardId: any, updates: any) =>
+    updateCard: (cardId: string, updates: Partial<Card>) =>
       updateBoard(updateCard(cardId, updates)),
-    deleteCard: (cardId: any) => updateBoard(deleteCard(cardId)),
-    moveCard: (cardId: any, newListId: any, newPos: any) =>
+    deleteCard: (cardId: string) => updateBoard(deleteCard(cardId)),
+    moveCard: (cardId: string, newListId: string, newPos: number) =>
       updateBoard(moveCard(cardId, newListId, newPos)),
-    reorderCards: (listId: any, newCards: any) =>
+    reorderCards: (listId: string, newCards: Card[]) =>
       updateBoard(reorderCards(listId, newCards)),
   };
 };

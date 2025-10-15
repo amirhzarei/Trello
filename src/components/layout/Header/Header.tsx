@@ -18,7 +18,7 @@ export const Header: React.FC<HeaderProps> = ({ board }) => {
             style={{ backgroundColor: headerColor }}
         >
             <div className={styles.headerContent}>
-                <HeaderContent board={board} />
+                <HeaderContent />
             </div>
         </header>
     );

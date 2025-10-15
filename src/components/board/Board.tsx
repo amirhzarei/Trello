@@ -33,7 +33,7 @@ export const BoardComponent: React.FC<BoardProps> = ({ board }) => {
         reorderCards,
     } = useBoardStore();
 
-    const { activeId, sensors, handleDragStart, handleDragEnd } = useDragAndDrop({
+    const { sensors, handleDragStart, handleDragEnd } = useDragAndDrop({
         lists: board.lists,
         onListReorder: (newLists) => reorderLists(board.id, newLists),
         onCardMove: moveCard,

@@ -49,13 +49,11 @@ export const moveCard =
   (cardId: string, newListId: string, newPosition: number) =>
   (board: Board): Board => {
     let cardToMove: Card | undefined;
-    let sourceListId: string | undefined;
 
     const listsWithoutCard = board.lists.map((list) => {
       const card = list.cards.find((c) => c.id === cardId);
       if (card) {
         cardToMove = card;
-        sourceListId = list.id;
         return { ...list, cards: list.cards.filter((c) => c.id !== cardId) };
       }
       return list;

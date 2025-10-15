@@ -50,7 +50,7 @@ export const ListComponent: React.FC<ListProps> = ({
                 list={list}
                 onUpdateTitle={onUpdateTitle}
                 onShowActions={handleShowActions}
-                menuButtonRef={menuButtonRef as any}
+                menuButtonRef={menuButtonRef as React.RefObject<HTMLButtonElement>}
             />
 
             <div className={styles.cards}>
